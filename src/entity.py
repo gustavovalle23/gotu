@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-from app.field import Field
-from app.base_entity import BaseEntity
+from src.field import Field
+from src.base_entity import BaseEntity
 
 
 class EntityBuilder:
