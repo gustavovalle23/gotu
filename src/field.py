@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 class Field:
-    def __init__(self, type, options: dict = {}) -> None:
+    def __init__(self, type, options: dict = None) -> None:
+        if options is None:
+            options = dict()
+
         self.name = ""
         self.type = type
         self.options = options
