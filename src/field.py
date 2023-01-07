@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+from typing import Optional
+
+
 class Field:
     def __init__(self, type, options: dict = None) -> None:
         if options is None:
@@ -30,5 +33,8 @@ class Field:
         return self._validations
 
 
-def field(type, options):
+def field(type, options: Optional[dict] = None):
+    if options is None:
+        options = {}
+
     return Field(type, options)
