@@ -15,3 +15,5 @@ def test_should_instantiate_an_entity():
 
     assert user.name == "Gustavo"
     assert user.age == 23
+
+    assert User.is_entity(user) == True
